@@ -1,0 +1,1026 @@
+html {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.home {
+    background-image: url(../images/landing.jpg);
+    height: 643px;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.overlay {
+    background-color: rgb(0 0 0 / 60%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.links ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.logo {
+    position: relative;
+    z-index: 2;
+}
+
+.links i {
+    color: white;
+    font-size: 22px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 2;
+    padding: 40px 10px;
+    font-size: 14px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.links a.active-link,
+.links a:hover {
+    color: #19c8fa;
+    border-bottom: 1px solid #19c8fa;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    z-index: 6;
+    position: relative;
+    margin: auto;
+    margin-bottom: 58px;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    background-color: #a2a2a2;
+    height: 1px;
+    width: calc(100% - 30px);
+    bottom: 0;
+}
+
+/*finsh header*/
+
+/*start landing*/
+.landing {
+    display: flex;
+}
+
+.landing .text {
+    color: white;
+    z-index: 4;
+    position: relative;
+    background-color: rgb(15 116 143 / 70%);
+    width: 38%;
+    padding: 50px;
+    line-height: 1.5;
+    padding-left: 100px;
+}
+
+.fa-angle-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: white;
+    z-index: 7;
+    padding: 0 30px 20px 0;
+}
+
+.fa-angle-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: white;
+    z-index: 7;
+    padding: 0 0 20px 30px;
+}
+
+.landing .bulltes {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+    z-index: 11;
+}
+
+.landing .bulltes li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    list-style-type: none;
+
+}
+
+.active {
+    background-color: #19c8fa;
+    border-color: #19c8fa;
+}
+
+/*finish landing*/
+
+/*start service*/
+.service-container {
+    margin-top: 100px;
+}
+
+.main-heading {
+    text-align: center;
+    margin: auto;
+}
+
+.main-heading h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 70px;
+}
+
+.main-heading p {
+    width: 550px;
+    color: #777;
+    line-height: 2;
+    width: 100%;
+    margin: auto;
+}
+
+.container-service {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+    margin-top: 50px;
+    margin: 50px 30px 0 30px;
+}
+
+.container-service h3 {
+    color: #19c8fa;
+    margin-bottom: 30px;
+}
+
+.container-service p {
+    color: #777777;
+    line-height: 2;
+}
+
+/*finish service*/
+
+/*start design*/
+.design {
+    background-image: url(../images/design-features.jpg);
+    display: flex;
+    justify-content: space-evenly;
+    height: 600px;
+    background-size: cover;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+
+.design::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.design h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.design img {
+    position: relative;
+    bottom: -150px;
+    margin-left: 150px;
+}
+
+.design .text {
+    color: white;
+    padding: 50px;
+    background-color: rgb(15 116 143 / 70%);
+    width: 50%;
+    margin-left: 190px;
+    height: 270px;
+}
+
+.desing img,
+.design .text {
+    z-index: 15;
+}
+
+.design .text li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+
+.design .text li {
+    list-style-type: none;
+    padding: 15px 0;
+}
+
+/*finish design*/
+
+/*start portfolio*/
+.portfolio-container .main-heading ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.portfolio-container .main-heading .Active {
+    background-color: #19c8fa;
+    color: white;
+}
+
+.imgs-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgs-container .box {
+    width: calc(100% / 4);
+    position: relative;
+    overflow: hidden;
+}
+
+.imgs-container .box img {
+    width: 338px;
+    transition-duration: 0.3s;
+}
+
+.imgs-container .box .caption {
+    position: absolute;
+    bottom: -100%;
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    transition-duration: 0.3s;
+    height: 25%;
+}
+
+.imgs-container .box .caption p {
+    color: #19c8fa;
+}
+
+.imgs-container .box:hover .caption {
+    bottom: 0;
+    width: 100%;
+}
+
+.imgs-container .box:hover img {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.portfolio .more {
+    background-color: #19c8fa;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*end portfolio*/
+
+/*start video*/
+.video video {
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    position: relative;
+    overflow: hidden;
+}
+
+.video .text {
+    margin: 0 0 30px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(15 116 143 / 70%);
+    padding: 50px;
+    top: 50%;
+    width: 100%;
+    font-weight: normal;
+    transform: translateY(-50%);
+}
+
+.video .text button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.video::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(0 0 0 / 40%);
+    width: 100%;
+    height: 100%;
+}
+
+/*end video*/
+
+/* start about*/
+.about .about-container img {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: -120px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.about {
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* end about*/
+
+/*start stats*/
+.stats {
+    background-image: url(../images/stats.png);
+    background-size: cover;
+    position: relative;
+
+}
+
+.stats::before {
+    content: "";
+    background-color: rgb(0 0 0 / 70%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.stats .stats-container .box {
+    background-color: rgb(15 116 143 / 70%);
+    color: white;
+    padding: 50px;
+}
+
+.stats .stats-container .box .number {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.stats .stats-container .box p {
+    font-size: 14px;
+}
+
+.stats .stats-container .box i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+}
+
+.stats .stats-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    width: 1000px;
+    margin: auto;
+}
+
+/*end stats*/
+
+/*start skills*/
+.our-skills {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-skills .skills-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.our-skills .text{
+    border-bottom: 1px solid #ccc;
+    line-height: 1.8;
+}
+.our-skills h3 {
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.our-skills p {
+    color: #777;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.our-skills img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.our-skills .content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.our-skills .testimonials .bulltes {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 11;
+}
+
+.our-skills .testimonials .bulltes li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+.our-skills .testimonials .bulltes .active {
+    background-color: #19c8fa;
+    border-color: white;
+}
+
+.our-skills .skills .prog-holder {
+    margin-bottom: 40px;
+}
+
+.our-skills .skills .prog {
+    background-color: #dedadc;
+    height: 30px;
+}
+
+.our-skills .skills .prog .span1 {
+    height: 100%;
+    background-color: #19c8fa;
+    width: 90%;
+    display: block;
+    position: relative;
+}
+
+.our-skills .skills .prog .span2 {
+    height: 100%;
+    background-color: #19c8fa;
+    width: 85%;
+    display: block;
+    position: relative;
+}
+
+.our-skills .skills .prog .span3 {
+    height: 100%;
+    background-color: #19c8fa;
+    width: 80%;
+    display: block;
+    position: relative;
+}
+
+.our-skills .skills .prog .span4 {
+    height: 100%;
+    background-color: #19c8fa;
+    width: 90%;
+    display: block;
+    position: relative;
+}
+
+/*end skills*/
+/* Start Quote */
+.quote {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../images/quote.jpg");
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 111;
+}
+
+.quote-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 75%);
+}
+
+
+.quote q {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+    z-index: 111;
+    position: relative;
+}
+
+/*End Quote*/
+
+/*start pricing*/
+.pricing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pricing .pricing-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing h3{
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.pricing .main-heading {
+    text-align: center;
+}
+
+.pricing .plans {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.pricing .plans .plan {
+    width: calc(100% / 4);
+    margin-right: 30px;
+}
+
+.pricing .plans .plan {
+    background-color: #fcfcfc;
+}
+
+.pricing .plans .plan .head {
+    border-top: 1px solid #19c8fa;
+    border-bottom: 1px solid #19c8fa;
+    padding: 40px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.pricing .plans .plan .head {
+    content: "$";
+    font-size: 25px;
+    position: relative;
+    font-weight: normal;
+}
+
+.pricing .plans .plan .head span::before {
+    content: "$";
+    font-size: 25px;
+    position: relative;
+    top: -40px;
+    left: -30px;
+    margin-right: 15px;
+    font-weight: normal;
+}
+.pricing .plans .plan .head span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pricing .plans .plan .head span::after {
+    content: "/Mo";
+    font-size: 20px;
+    position: relative;
+    right: -15px;
+}
+
+
+.pricing .plans .plan ul li {
+    padding: 20px;
+    list-style-type: none;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+.pricing .plans .plan ul li:not(:last-child) {
+    border-bottom: #19c8fa 1px solid;
+}
+
+.pricing .plans .plan ul {
+    border-bottom: 1px solid #19c8fa;
+}
+
+.pricing .plans .plan .foot a {
+    text-decoration: none;
+    padding: 20px;
+    border: 1px solid #19c8fa;
+    width: fit-content;
+    margin: 30px auto;
+    display: block;
+}
+
+.pricing .plans .plan .foot a:hover {
+    background-color: #19c8fa;
+    transition-duration: .5s;
+}
+
+.pricing .contact-text {
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+
+.pricing .contact-link {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #19c8fa;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+/*end pricing*/
+
+/*start subscripe*/
+.subscripe {
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    color: white;
+    z-index: 10;
+}
+
+.subscripe-container {
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 11;
+    position: relative;
+}
+
+.subscripe form {
+    position: relative;
+    display: flex;
+    width: 500px;
+}
+
+.subscripe form i {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translate(-50%);
+}
+
+.subscripe::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0 0 0 / 50%);
+    height: 100%;
+    width: 100%;
+}
+
+.subscripe form input[type="email"] {
+    padding: 20px 20px 20px 60px;
+    background: none;
+    border: 1px solid white;
+    border-right: none;
+    color: white;
+}
+
+.subscripe form input[type="submit"] {
+    cursor: pointer;
+    background-color: #19c8fa;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-left: none;
+    text-transform: uppercase;
+}
+
+/*end subscripe*/
+
+/*start contatct*/
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact .contact-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .content form {
+    flex-basis: 70%;
+}
+
+.contact .content form .main-input {
+    display: block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.contact .content form textarea .main-input {
+    height: 200px;
+}
+
+.contact .content form input[type="submit"] {
+    text-transform: uppercase;
+    background-color: #19c8fa;
+    padding: 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+    color: white;
+}
+
+.contact .content info {
+    flex-basis: 25%;
+}
+
+.contact .content info h4 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact .content info h4:nth-of-type(2) {
+    margin-top: 90px;
+}
+
+.contact .content info .phone {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+
+}
+
+.contact .content info address {
+    color: #777;
+    line-height: 2;
+}
+
+/*end contatct*/
+
+/*start footer*/
+.footer {
+    background-image: url(../images/subscribe.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.footer::before {
+    content: "";
+    background-color: rgb(0 0 0 / 70%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.footer-container {
+    position: relative;
+    z-index: 20;
+}
+
+.footer img {
+    margin-bottom: 20px;
+
+}
+
+.footer p {
+    border-bottom: 1px solid white;
+    width: fit-content;
+    padding: 20px;
+    margin: 20px auto;
+    font-size: 22px;
+}
+
+.footer .social-icons i {
+    padding: 10px 15px;
+}
+
+.footer .copyright {
+    margin-top: 60px;
+}
+
+/*end footer*/
+
+/*===================media an drespoisve-------------------------*/
+/*header*/
+@media (min-width:767px) {
+    .links i {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .links ul {
+        display: none;
+    }
+
+    .links a {
+        padding: 15px !important;
+        display: block;
+    }
+
+}
+
+.links i:hover+ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0 0 0 /50%);
+}
+
+/*landing*/
+@media(max-width:767px) {
+    .landing .text {
+        width: 100%;
+    }
+
+    .landing .content {
+        max-width: 100%;
+    }
+}
+
+/*services*/
+@media(max-width:767px) {
+    .col1 {
+        display: grid;
+        grid-column: span 2;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+/*design*/
+@media(max-width:767px) {
+    .design img{
+        display: none;
+    }
+@media(max-width:767px) {
+    .design .text{
+        width: 100%;
+        margin: auto;
+    }
+}
+/*portfolio*/
+@media(max-width:767px) {
+    .portfolio .box{
+        width: 100%;
+    }
+    .portfolio img{
+        width: 100% !important;
+    }
+}
+/*about*/
+@media(max-width:767px) {
+    .about img{
+        bottom: -60px !important;
+        margin-top: 10px !important;
+    }
+}
+/*stats*/
+@media(max-width:767px) {
+    .stats{
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .our-skills{
+        display: block;
+    }
+    .our-skills .content{
+        text-align: center;
+        flex-direction: column;
+    }
+    .our-skills .content img{
+        margin: auto;
+        margin-bottom: 20px;;
+    }
+}
+
+/*pricing*/
+@media(max-width:767px) {
+    .pricing .plans{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+    .pricing .plan{
+        width: calc(100% / 1) !important;
+        margin-right: 0px !important;
+        margin-top: 30px;
+    }
+}
+@media(min-width:767px) and (max-width:1200px) {
+    .pricing .plans{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+    .pricing .plan{
+        width: calc(100% / 2) !important;
+        margin-right: 0px !important;
+        margin-top: 30px;
+    }
+}
+/*contact*/
+@media(max-width:767px) {
+    .contact .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .content .info{
+        margin: auto;
+    }
+}
+/*subscripe*/
+@media(max-width:767px) {
+    .subscripe-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
